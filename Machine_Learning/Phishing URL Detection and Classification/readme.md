@@ -1,9 +1,9 @@
-# 🚀 Phishing URL Detection Using Machine Learning
+# Phishing URL Detection Using Machine Learning
 
-## 📌 Project Overview
+## Project Overview
 Phishing attacks are a growing cybersecurity threat, tricking users into sharing sensitive information. Traditional blacklist-based detection methods fail to keep up with evolving phishing tactics. This project leverages **machine learning** to build an intelligent phishing URL detection system that **learns, adapts, and accurately classifies phishing URLs**.
 
-## 🎯 Business Value
+## Business Value
 - **Proactive Threat Detection:** Identifies phishing URLs dynamically, outperforming static blacklists.
 - **Scalable & Deployable:** Designed for real-time integration into security platforms.
 - **Explainable AI:** Uses **SHAP analysis** to ensure transparency in model decisions.
@@ -11,7 +11,7 @@ Phishing attacks are a growing cybersecurity threat, tricking users into sharing
 
 ---
 
-## 🔍 Dataset & Preprocessing
+## Dataset & Preprocessing
 - **Dataset:** ~11,000 labeled URLs (55% phishing, 45% legitimate) with **30 key features** related to URL structure, domain metadata, and content analysis.
 - **EDA & Feature Engineering:**
   - **Univariate Analysis & Pairplots:** Explored key features like `URL_Length` and `Abnormal_URL`.
@@ -20,7 +20,7 @@ Phishing attacks are a growing cybersecurity threat, tricking users into sharing
 
 ---
 
-## 🏆 Model Selection & Performance
+## Model Selection & Performance
 Multiple machine learning models were tested, and **XGBoost** emerged as the best performer.
 
 | Model                | Accuracy  | Precision | Recall  | F1-Score |
@@ -32,13 +32,13 @@ Multiple machine learning models were tested, and **XGBoost** emerged as the bes
 | KNN                 | 93.3%     | 0.93      | 0.95    | 0.94     |
 | Naive Bayes         | 67.6%     | 0.57      | 1.00    | 0.73     |
 
-🔹 **Hyperparameter Tuning:**  
+ **Hyperparameter Tuning:**  
 - Used **GridSearchCV** to optimize `n_estimators`, `max_depth`, `learning_rate` (XGBoost), and `max_features` (Random Forest).  
 - Improved model performance and reduced overfitting.
 
 ---
 
-## 🧐 Explainability & SHAP Analysis
+## Explainability & SHAP Analysis
 To ensure model transparency, **SHAP (SHapley Additive exPlanations)** was used to interpret predictions:
 - **Key Features:** `URL_Length`, `SFH`, and `Abnormal_URL` were the most impactful.
 - **Visualizing Feature Contributions:** SHAP summary plots explained how each feature influenced phishing predictions.
@@ -47,7 +47,7 @@ To ensure model transparency, **SHAP (SHapley Additive exPlanations)** was used 
 
 ---
 
-## 🚀 Deployment & Future Improvements
+##  Deployment & Future Improvements
 ✔ **Deployment Ready:** The model can be integrated into **real-time phishing detection systems**.  
 ✔ **Scalable & Adaptable:** Works for enterprises, security providers, and cloud-based platforms.  
 ✔ **Next Steps:**

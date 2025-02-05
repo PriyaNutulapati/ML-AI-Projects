@@ -43,7 +43,7 @@ To ensure model transparency, **SHAP (SHapley Additive exPlanations)** was used 
 - **Key Features:** `URL_Length`, `SFH`, and `Abnormal_URL` were the most impactful.
 - **Visualizing Feature Contributions:** SHAP summary plots explained how each feature influenced phishing predictions.
 
-![SHAP Analysis](images/shap_analysis.png)
+![SHAP Analysis](images/Shap_Analysis.png)
 
 ---
 
